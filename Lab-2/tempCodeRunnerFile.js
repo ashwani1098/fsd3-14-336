@@ -1,2 +1,5 @@
-await writeFile('stud.txt','Ravikant Singh\nRollNo:83');
-console.log("File changed...");
+
+import {mkdir} from "fs/promises";
+
+await mkdir("uploads")
+await mkdir("uploads/images");
