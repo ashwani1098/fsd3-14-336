@@ -14,12 +14,6 @@ const saveCart = async (cart) => {
 const addToCart = async (product) => {
     const cart = await getCart();
     const isFoundCart = cart.find((item) => item.id === product.id);
-    if (!isFoundCart) {
-        isFoundCart.qty +=1;
-    } else { cart.push(product);
-       await saveCart(cart);
-        console.log(`${product.name} added to cart successfully!`);
-    };
 }
 
 const dispklayCart = async () => {
