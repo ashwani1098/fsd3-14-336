@@ -16,13 +16,17 @@ const b2={
 
 
 function Book(props){
+  const {picUrl,bname,price,quantity,rating}=props.book;
   return(
-    <div>
-      <img src={props.book.picUrl} alt={props.book.bname} />
+    <div className="book">
+      <img src={picUrl} alt={bname} />
       <h2>welcome to the house of books</h2>
-      <h3>price:{props.book.price}</h3>
-      <h4>quantity:{props.book.quantity} </h4>
-      <h6>Rating : {props.book.rating}</h6>
+      <h3>price:{price}</h3>
+      <h4>quantity:{quantity} </h4>
+      <h6>Rating : {rating}</h6>
+
+      <button>Add to Cart</button>
+
     </div>
   );
 }
@@ -30,9 +34,14 @@ function Book(props){
 export default function App(){
   return (
     <>
+    <h1>Book Store</h1>
+    <div className="container">
     <Book book={b1}/>
-    <h1>Hello world</h1>
     <Book book={b2}/>
+    <Book book={b1}/>
+    <Book book={b2}/>
+    </div>
+    
     </>
   );
 }
