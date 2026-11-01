@@ -1,37 +1,55 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-.container{
-  display:flex;
-  padding:20px;
-  gap:5px;
-  flex-wrap:wrap;
-}
-.book{
-  padding:10px;
-  gap:5px;
-  border:2px solid black;
+/* there must be space
+@import "tailwindcss";  */
 
+
+@import "tailwindcss";
+
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
 }
-.book img{
-  height:300px;
+
+h1 {
+  color: #222;
+  text-align: center;
+  margin: 20px;
 }
-.book h1{
-  font: size 1.5rem;;
-  color:blue;
+
+.book {
+  background-color: white;
+  width: 220px;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px lightgray;
+  display: inline-block;
+  text-align: center;
 }
+
+.book img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
 .book button {
-  width: 100%;
-  padding: 10px;
-  background-color: #ffd814;
-  border: 1px solid #fcd200;
-  border-radius: 20px;
+  background-color: black;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  font-size: 15px;
 }
 
 .book button:hover {
-  background-color: #f7ca00;
+  background-color: gray;
+}
+
+ul {
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 8px;
+  width: fit-content;
 }
